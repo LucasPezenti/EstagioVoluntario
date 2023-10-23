@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 984e1ce9782a27049a0284c41c85f910
+guid: 64f5371f5fd494e4fb0eb6c0c98c2121
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,14 +113,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bc134524f13ff748addd238a6947a2f
-      internalID: -171044397
+      spriteID: 4c5437486ab78324e863682c0bd0bb44
+      internalID: -167142428
       vertices: []
       indices: 
       edges: []
@@ -134,18 +134,77 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -32, y: 32}
-        - {x: -32, y: -32}
-        - {x: 32, y: -32}
-        - {x: 32, y: 32}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 313a92f2efb3eab4e8b67c9b17771a40
-      internalID: 551458382
+      spriteID: 1fe68131c3f23774f9a5d124a165f378
+      internalID: 346465904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Cenario_64_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f968753225b2f341bd57046f2d57d82
+      internalID: -608500625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Cenario_64_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87db35a82004b304b9f3b85945940262
+      internalID: 580296417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Cenario_64_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8326e7f259674cb4a8cd05cb77900c68
+      internalID: -1824961424
       vertices: []
       indices: 
       edges: []
@@ -161,14 +220,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Spritesheet_Cenario_64_0: -171044397
-      Spritesheet_Cenario_64_1: 551458382
-      Spritesheet_Cenario_64_2: 831525683
-      Spritesheet_Cenario_64_3: 2119336801
-      Spritesheet_Cenario_64_4: -223288534
-      Spritesheet_Cenario_64_5: 1296781692
-      Spritesheet_Cenario_64_6: -257094651
-      Spritesheet_Cenario_64_7: 1310592692
+      Spritesheet_Cenario_64_0: -167142428
+      Spritesheet_Cenario_64_1: 346465904
+      Spritesheet_Cenario_64_2: -608500625
+      Spritesheet_Cenario_64_3: 580296417
+      Spritesheet_Cenario_64_4: -1824961424
+      Spritesheet_Cenario_64_5: 1234693767
+      Spritesheet_Cenario_64_6: -1833904121
+      Spritesheet_Cenario_64_7: 1173336275
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

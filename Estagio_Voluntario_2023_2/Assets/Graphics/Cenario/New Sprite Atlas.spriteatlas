@@ -45,21 +45,27 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 6b9d7facecbe3f24b94d09d3118dda53, type: 3}
-    - {fileID: 2800000, guid: 984e1ce9782a27049a0284c41c85f910, type: 3}
+    - {fileID: 2800000, guid: 64f5371f5fd494e4fb0eb6c0c98c2121, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 551458382, guid: 984e1ce9782a27049a0284c41c85f910, type: 3}
-  - {fileID: -171044397, guid: 984e1ce9782a27049a0284c41c85f910, type: 3}
   - {fileID: 1931774312, guid: 6b9d7facecbe3f24b94d09d3118dda53, type: 3}
   - {fileID: 836194561, guid: 6b9d7facecbe3f24b94d09d3118dda53, type: 3}
+  - {fileID: -1824961424, guid: 64f5371f5fd494e4fb0eb6c0c98c2121, type: 3}
+  - {fileID: 346465904, guid: 64f5371f5fd494e4fb0eb6c0c98c2121, type: 3}
+  - {fileID: -167142428, guid: 64f5371f5fd494e4fb0eb6c0c98c2121, type: 3}
+  - {fileID: 580296417, guid: 64f5371f5fd494e4fb0eb6c0c98c2121, type: 3}
+  - {fileID: -608500625, guid: 64f5371f5fd494e4fb0eb6c0c98c2121, type: 3}
   m_PackedSpriteNamesToIndex:
-  - Spritesheet_Cenario_64_1
-  - Spritesheet_Cenario_64_0
   - Spritesheet_Cenario_32_0
   - Spritesheet_Cenario_32_1
+  - Spritesheet_Cenario_64_4
+  - Spritesheet_Cenario_64_1
+  - Spritesheet_Cenario_64_0
+  - Spritesheet_Cenario_64_3
+  - Spritesheet_Cenario_64_2
   m_RenderDataMap: {}
   m_Tag: New Sprite Atlas
   m_IsVariant: 0
