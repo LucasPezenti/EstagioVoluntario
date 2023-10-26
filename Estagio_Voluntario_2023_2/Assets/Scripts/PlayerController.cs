@@ -4,40 +4,28 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Animator animator;
     private string curState;
     public float moveSpd;
     public Rigidbody2D rb;
+    public Animator anim;
     private Vector2 moveDirection;
+    private Vector2 lastMoveDirection;
 
     private bool moved = false;
     private float moveX = 0;
     private float moveY = 0;
-    private int right_dir = 0, left_dir = 1, up_dir = 3, down_dir = 4;
-    private int dir = 4, last_dir = 4;
-
-    // Player animations
-    const string PLAYER_IDLE_D = "Player_Idle_D";
-    const string PLAYER_IDLE_U = "Player_Idle_U";
-    const string PLAYER_IDLE_R = "Player_Idle_R";
-    const string PLAYER_IDLE_L = "Player_Idle_L";
-
-    const string PLAYER_WALK_R = "Player_Walk_R";
-    const string PLAYER_WALK_L = "Player_Walk_L";
-    const string PLAYER_WALK_D = "Player_Walk_D";
-    const string PLAYER_WALK_U = "Player_Walk_U";
 
     
     void Start()
     {
-        animator = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         ProcessInputs();
-        PlayerAnimation();
+        Animate();
     }
 
     // Physics Calculation
@@ -49,6 +37,9 @@ public class PlayerController : MonoBehaviour
         moveX = Input.GetAxisRaw("Horizontal");
         moveY = Input.GetAxisRaw("Vertical");
 
+        if((moveX == 0 && moveY == 0) && moveDirection.x != 0 || moveDirection.y != 0){
+            lastMoveDirection = moveDirection;
+        }
 
         moveDirection = new Vector2(moveX, moveY).normalized;
 
@@ -59,79 +50,15 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(moveDirection.x * moveSpd, moveDirection.y * moveSpd);
         moved = false;
         moveSpd = 3.4f;
-
-
-        // Movement direction
-        if(moveX > 0){
-            moved = true;
-            dir = right_dir;
-            last_dir = right_dir;
-        }
-        else if(moveX < 0){
-            moved = true;
-            dir = left_dir;
-            last_dir = left_dir;
-        }
-        if(moveY > 0){
-            moved = true;
-            dir = up_dir;
-            last_dir = up_dir;
-        }
-        else if(moveY < 0){
-            moved = true;
-            dir = down_dir;
-            last_dir = down_dir;
-        }
-        
         
     }
 
-    private void PlayerAnimation(){
-
-        // Idle animation
-        if(!moved){
-            if(last_dir == down_dir){
-                ChangeAnimationState(PLAYER_IDLE_D);
-            }
-            else if(last_dir == up_dir){
-                ChangeAnimationState(PLAYER_IDLE_U);
-            }
-            else if(last_dir == right_dir){
-                ChangeAnimationState(PLAYER_IDLE_R);
-            }
-            else if(last_dir == left_dir){
-                ChangeAnimationState(PLAYER_IDLE_L);
-            }
-        }
-
-        // Walking animation
-        else if(moved){
-            if(dir == down_dir){
-                ChangeAnimationState(PLAYER_WALK_D);
-            }
-            else if(dir == up_dir){
-                ChangeAnimationState(PLAYER_WALK_U);
-            }
-            else if(dir == right_dir){
-                ChangeAnimationState(PLAYER_WALK_R);
-            }
-            else if(dir == left_dir){
-                ChangeAnimationState(PLAYER_WALK_L);
-            }
-        }
-
-    }
-    
-    public void ChangeAnimationState(string newState){
-
-        // Stop an animaiton from interrupting itself
-        if(curState == newState){
-            return;
-        }
-
-        animator.Play(newState);
-        curState = newState;
-
+    public void Animate(){
+        anim.SetFloat("AnimMoveX", moveDirection.x);
+        anim.SetFloat("AnimMoveY", moveDirection.y);
+        anim.SetFloat("AnimMoveMagnitude", moveDirection.magnitude);
+        anim.SetFloat("AnimLastMoveX", lastMoveDirection.x);
+        anim.SetFloat("AnimLastMoveY", lastMoveDirection.y);
     }
     
 }

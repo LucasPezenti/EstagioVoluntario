@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dae9a84ee8893f340be2877465999218
+guid: 33a49a52052bfbd4cb4dc488ece38262
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -109,6 +109,636 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 336
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d96ce12f412de4084a0c45eef53339
+      internalID: 1738684699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 336
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e42c1a8775d8034da5ac2742e8119fa
+      internalID: -605761313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e232aab68383ec4cba684d34768fcfd
+      internalID: -1313257788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 336
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66d267fc3cae28428ad3728f6564110
+      internalID: -1778855432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6aeace04920254c81cd4b6070268e6
+      internalID: -237613819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccdccc94a1f1ea4fbad9c782b6a784a
+      internalID: 1897963851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc67b02b038da2144b41dec722afda6e
+      internalID: -1789305415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26d41962e05df94e8eea3323311df2e
+      internalID: -906449122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b98b17c869a9c4f90793d111792964
+      internalID: 2082925036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd2e66b3f2e8024d9328d1170ba637e
+      internalID: 715156977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5910ef5de99850f47830ba291954a206
+      internalID: -1893867547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d7e7b78f52bf643bdd618c33dbd3b9
+      internalID: 2111057591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0a304e1de921649b8e0d799e57e221
+      internalID: 436026102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0756edbec0ae94c96468ddd41b7e27
+      internalID: -643228383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7e2a5ec2cd03248aaa484e22c05536
+      internalID: -1836401601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7bcc284eee3894aa645b4eafd5b7bc
+      internalID: 202366110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5216cd83dc35b7b4481e0edf41968030
+      internalID: 1547551180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49366b6f41b2ca84b9f6203234ad338b
+      internalID: -1882484340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfbc46e8512e9a4caa1d5db154d27c2
+      internalID: -1377904324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ffd04174d818c4197de92cc5337b91
+      internalID: 1892351530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf6f22e4888abe4d8ee106593f13610
+      internalID: -691455750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d9f2d23b3e1774a93693da54e9e3d4
+      internalID: -1732241601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2741b7c3076a2e9468d9122e477b1686
+      internalID: 1395790352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6eaae515a45dff478b80033eab6783b
+      internalID: -386338124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90acb65ca122cde4389ba72b1740b9f3
+      internalID: -1417015343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec8d36faf438844096eaf220cdf9222
+      internalID: 1107916036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c08b9afd25c0047b803f307460e075
+      internalID: 797737789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6adbc7c4062f6604993adf54df144278
+      internalID: 1380314910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80170e8cc79c52442a5fcd0d02bfc744
+      internalID: 708155470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc222e1f0cc59e43ab6df69d9543690
+      internalID: -724157782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 48
         width: 48
         height: 48
@@ -119,14 +749,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 368b10d9bc03f334597807396ff3cba4
-      internalID: 1744522691
+      spriteID: 3f427311219c755448ebac40611a9f51
+      internalID: 1029817047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cozinheiro_Idle_Sheet_1
+      name: Cozinheiro_Idle_Sheet_31
       rect:
         serializedVersion: 2
         x: 48
@@ -140,14 +770,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb78a6ae00296d048a5174a7fb05327e
-      internalID: 1835280160
+      spriteID: fc5cdfa762599584c94c7ce8608ceed0
+      internalID: 2016682079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cozinheiro_Idle_Sheet_2
+      name: Cozinheiro_Idle_Sheet_32
       rect:
         serializedVersion: 2
         x: 96
@@ -161,14 +791,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a70e5c24261d6149b044f9b1c23231b
-      internalID: -1834502731
+      spriteID: dfe00017d3c33da47ab7fe60ecdc181d
+      internalID: 1677280857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cozinheiro_Idle_Sheet_3
+      name: Cozinheiro_Idle_Sheet_33
       rect:
         serializedVersion: 2
         x: 144
@@ -182,14 +812,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb16931eff84e0943902aa8071a9e27c
-      internalID: 2124260320
+      spriteID: 5abaf4cbcba373540a774e56f5e31e3c
+      internalID: 170969626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cozinheiro_Idle_Sheet_4
+      name: Cozinheiro_Idle_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9ca1e6adfab4b499ef5a7481588643
+      internalID: 528560247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_35
       rect:
         serializedVersion: 2
         x: 0
@@ -203,14 +854,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62b5cf0a10164b241800cee16f1dfd79
-      internalID: -582736052
+      spriteID: 0231af6fe321d2d4eacea50e407418f8
+      internalID: 1151653004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cozinheiro_Idle_Sheet_5
+      name: Cozinheiro_Idle_Sheet_36
       rect:
         serializedVersion: 2
         x: 48
@@ -224,14 +875,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59709a8d5bb04a04eaefcbc68bb2fb78
-      internalID: 137873162
+      spriteID: 44277338b56d9894a8f6d96509f8c365
+      internalID: -1207795899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cozinheiro_Idle_Sheet_6
+      name: Cozinheiro_Idle_Sheet_37
       rect:
         serializedVersion: 2
         x: 96
@@ -245,14 +896,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bab780df84e46504588800b5c9f0d164
-      internalID: -795767110
+      spriteID: d811bf9829dec7940918502e3ab6a54e
+      internalID: -1926626048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cozinheiro_Idle_Sheet_7
+      name: Cozinheiro_Idle_Sheet_38
       rect:
         serializedVersion: 2
         x: 144
@@ -266,8 +917,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc4b896e7d9be7942aa922842d21c038
-      internalID: 1694937600
+      spriteID: 049b0eea744bc554ba6fb8572bfcf3e8
+      internalID: -1174437374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cozinheiro_Idle_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0837e79a7ad42e343a88d01b2af4fb3d
+      internalID: 449842522
       vertices: []
       indices: 
       edges: []
@@ -283,14 +955,46 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cozinheiro_Idle_Sheet_0: 1744522691
-      Cozinheiro_Idle_Sheet_1: 1835280160
-      Cozinheiro_Idle_Sheet_2: -1834502731
-      Cozinheiro_Idle_Sheet_3: 2124260320
-      Cozinheiro_Idle_Sheet_4: -582736052
-      Cozinheiro_Idle_Sheet_5: 137873162
-      Cozinheiro_Idle_Sheet_6: -795767110
-      Cozinheiro_Idle_Sheet_7: 1694937600
+      Cozinheiro_Idle_Sheet_0: 1738684699
+      Cozinheiro_Idle_Sheet_1: -605761313
+      Cozinheiro_Idle_Sheet_10: -1893867547
+      Cozinheiro_Idle_Sheet_11: 2111057591
+      Cozinheiro_Idle_Sheet_12: 436026102
+      Cozinheiro_Idle_Sheet_13: -643228383
+      Cozinheiro_Idle_Sheet_14: -1836401601
+      Cozinheiro_Idle_Sheet_15: 202366110
+      Cozinheiro_Idle_Sheet_16: 1547551180
+      Cozinheiro_Idle_Sheet_17: -1882484340
+      Cozinheiro_Idle_Sheet_18: -1377904324
+      Cozinheiro_Idle_Sheet_19: 1892351530
+      Cozinheiro_Idle_Sheet_2: -1313257788
+      Cozinheiro_Idle_Sheet_20: -691455750
+      Cozinheiro_Idle_Sheet_21: -1732241601
+      Cozinheiro_Idle_Sheet_22: 1395790352
+      Cozinheiro_Idle_Sheet_23: -386338124
+      Cozinheiro_Idle_Sheet_24: -1417015343
+      Cozinheiro_Idle_Sheet_25: 1107916036
+      Cozinheiro_Idle_Sheet_26: 797737789
+      Cozinheiro_Idle_Sheet_27: 1380314910
+      Cozinheiro_Idle_Sheet_28: 708155470
+      Cozinheiro_Idle_Sheet_29: -724157782
+      Cozinheiro_Idle_Sheet_3: -1778855432
+      Cozinheiro_Idle_Sheet_30: 1029817047
+      Cozinheiro_Idle_Sheet_31: 2016682079
+      Cozinheiro_Idle_Sheet_32: 1677280857
+      Cozinheiro_Idle_Sheet_33: 170969626
+      Cozinheiro_Idle_Sheet_34: 528560247
+      Cozinheiro_Idle_Sheet_35: 1151653004
+      Cozinheiro_Idle_Sheet_36: -1207795899
+      Cozinheiro_Idle_Sheet_37: -1926626048
+      Cozinheiro_Idle_Sheet_38: -1174437374
+      Cozinheiro_Idle_Sheet_39: 449842522
+      Cozinheiro_Idle_Sheet_4: -237613819
+      Cozinheiro_Idle_Sheet_5: 1897963851
+      Cozinheiro_Idle_Sheet_6: -1789305415
+      Cozinheiro_Idle_Sheet_7: -906449122
+      Cozinheiro_Idle_Sheet_8: 2082925036
+      Cozinheiro_Idle_Sheet_9: 715156977
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
