@@ -8,8 +8,10 @@ public class PlayerController : MonoBehaviour
     public float moveSpd;
     public Rigidbody2D rb;
     public Animator anim;
+    public GameObject interactionAlert;
     private Vector2 moveDirection;
     private Vector2 lastMoveDirection;
+    private PickUp pickUp;
 
     private bool moved = false;
     private float moveX = 0;
@@ -18,7 +20,8 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
-
+        pickUp = gameObject.GetComponent<PickUp>();
+        pickUp.Direction = new Vector2(0, 0);
     }
 
     // Update is called once per frame
@@ -42,6 +45,9 @@ public class PlayerController : MonoBehaviour
         }
 
         moveDirection = new Vector2(moveX, moveY).normalized;
+        if(moveDirection.sqrMagnitude > .1f){
+            pickUp.Direction = moveDirection.normalized;
+        }
 
     }
 
@@ -51,6 +57,14 @@ public class PlayerController : MonoBehaviour
         moved = false;
         moveSpd = 3.4f;
         
+    }
+
+    public void interactOn(){
+        interactionAlert.SetActive(true);
+    }
+
+    public void interactOff(){
+        interactionAlert.SetActive(false);
     }
 
     public void Animate(){

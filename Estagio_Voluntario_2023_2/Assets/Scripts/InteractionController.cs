@@ -20,12 +20,14 @@ public class InteractionController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.CompareTag("Player")){
             inRange = true;
+            collision.gameObject.GetComponent<PlayerController>().interactOn();
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision){
         if(collision.gameObject.CompareTag("Player")){
             inRange = false;
+            collision.gameObject.GetComponent<PlayerController>().interactOff();
         }
     }
 }
