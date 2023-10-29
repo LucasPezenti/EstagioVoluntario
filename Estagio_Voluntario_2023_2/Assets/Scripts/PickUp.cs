@@ -31,11 +31,11 @@ public class PickUp : MonoBehaviour
                     itemHolding.transform.position = holdSpot.position;
                     itemHolding.transform.parent = transform;
                     if(itemHolding.GetComponent<Rigidbody2D>()){
-                        itemHolding.GetComponent<Rigidbody2D>().simulated = false;
-                    }
+                        itemHolding.GetComponent<Rigidbody2D>().simulated = false;                
                     //Debug.Log("Item grabbed");
+                    }
                 }
-            }
+            }    
         }
     }
 
