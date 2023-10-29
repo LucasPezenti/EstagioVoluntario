@@ -15,7 +15,7 @@ public class PickUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E)){
+        if(Input.GetKeyDown(KeyCode.Space)){
             if(itemHolding){
                 itemHolding.transform.position = transform.position + Direction * .7f;
                 itemHolding.transform.parent = null;

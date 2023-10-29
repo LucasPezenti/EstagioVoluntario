@@ -16,4 +16,8 @@ public class ServeController : MonoBehaviour
         this.order = _order;
     }
 
+    public Transform GetServeSpot(){
+        return serveSpot;
+    }
+
 }

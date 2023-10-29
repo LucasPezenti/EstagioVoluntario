@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 lastMoveDirection;
     private PickUp pickUp;
 
-    private bool moved = false;
+   // private bool moved = false;
     private float moveX = 0;
     private float moveY = 0;
 
@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
         }
 
         moveDirection = new Vector2(moveX, moveY).normalized;
+
+        // Pick up direction
         if(moveDirection.sqrMagnitude > .1f){
             pickUp.Direction = moveDirection.normalized;
         }
@@ -54,15 +56,17 @@ public class PlayerController : MonoBehaviour
     private void Move(){
         
         rb.velocity = new Vector2(moveDirection.x * moveSpd, moveDirection.y * moveSpd);
-        moved = false;
+        //moved = false;
         moveSpd = 3.4f;
         
     }
 
+    // Set interaction alert on
     public void interactOn(){
         interactionAlert.SetActive(true);
     }
 
+    // Set interaction alert off
     public void interactOff(){
         interactionAlert.SetActive(false);
     }
