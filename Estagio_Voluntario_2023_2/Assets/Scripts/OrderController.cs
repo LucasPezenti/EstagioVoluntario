@@ -11,9 +11,15 @@ public class OrderController : MonoBehaviour
     public GameObject orderObj;
     [SerializeField] Transform serveSpot;
     private GameObject playerHolding;
-   private bool canInteract;
+    private Ingredients playerOrder;
+    private Score score;
+    private bool canInteract;
 
-
+    private void Start()
+    {
+        playerOrder = GameObject.FindObjectOfType<Ingredients>();
+        score = GameObject.FindObjectOfType<Score>();
+    }
     public void Update(){
         if(canInteract){
             if(Input.GetKeyDown(KeyCode.E)){
@@ -30,7 +36,16 @@ public class OrderController : MonoBehaviour
             if(orderObj.GetComponent<Rigidbody2D>()){
                 orderObj.GetComponent<Rigidbody2D>().simulated = true;   
             }
+            CompareOrder(playerOrder);
             Destroy(orderObj);
+        }
+    }
+
+    public void CompareOrder(Ingredients delivered){
+        if(delivered.ingredientIndex == curOrder.ingredientIndex){
+            score.AddPoints(1);
+        }else{
+            score.RemovePoints(1);
         }
     }
 

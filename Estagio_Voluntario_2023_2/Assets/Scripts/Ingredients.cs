@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class Ingredients : ScriptableObject
+public class Ingredients : MonoBehaviour
 {
-    public Sprite ingredientSprite;
     public string ingredientName;
     public int ingredientIndex;
 

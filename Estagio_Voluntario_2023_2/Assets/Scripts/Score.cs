@@ -14,6 +14,11 @@ public class Score : MonoBehaviour
 
     public void AddPoints(int num){
         pointsCount += num;
+        Debug.Log("pontos: " + pointsCount);
+    }
+
+    public void RemovePoints(int num){
+        pointsCount -= num;
     }
 /*
     public void comparePoints(){

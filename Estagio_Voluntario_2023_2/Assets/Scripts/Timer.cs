@@ -21,6 +21,8 @@ public class Timer : MonoBehaviour
     public TimerFormats format;
     private Dictionary<TimerFormats, string> timeFormats = new Dictionary<TimerFormats, string>();
 
+    private bool gameOver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,7 @@ public class Timer : MonoBehaviour
         
         if(hasLimit && ((countDown && curTime <= timerLimit) || (!countDown && curTime >= timerLimit))){
             curTime = timerLimit;
+            gameOver = true;
             SetTimerText();
             timerText.color = Color.red;
             enabled = false;
@@ -46,6 +49,10 @@ public class Timer : MonoBehaviour
 
     private void SetTimerText(){
         timerText.text = hasFormat ? curTime.ToString(timeFormats[format]) : curTime.ToString();
+    }
+
+    public bool GetGameOver(){
+        return gameOver;
     }
 }
 

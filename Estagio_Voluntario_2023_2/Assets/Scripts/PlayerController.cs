@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public int points;
-    public float moveSpd;
+    private float moveSpd;
     public Rigidbody2D rb;
     public Animator anim;
     public GameObject interactionAlert;
+    [SerializeField] Timer timer;
+    [SerializeField] GameObject gameOverScreen;
     private Vector2 moveDirection;
     private Vector2 lastMoveDirection;
     private PickUp pickUp;
 
-   // private bool moved = false;
+    private bool canMove = true;
     private float moveX = 0;
     private float moveY = 0;
 
@@ -27,7 +28,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ProcessInputs();
+        GameOver();
+        if(canMove){
+            ProcessInputs();
+        }
         Animate();
     }
 
@@ -61,10 +65,6 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    public void AddPoints(){
-        points++;
-        Debug.Log("pontos = " + points);
-    }
     // Set interaction alert on
     public void interactOn(){
         interactionAlert.SetActive(true);
@@ -73,6 +73,16 @@ public class PlayerController : MonoBehaviour
     // Set interaction alert off
     public void interactOff(){
         interactionAlert.SetActive(false);
+    }
+
+    public void GameOver(){
+        if(timer.GetGameOver()){
+            canMove = false;
+            moveDirection.x = 0;
+            moveDirection.y = 0;
+            gameOverScreen.SetActive(true);
+            //Debug.Log("Fim de jogo");
+        }
     }
 
     public void Animate(){
