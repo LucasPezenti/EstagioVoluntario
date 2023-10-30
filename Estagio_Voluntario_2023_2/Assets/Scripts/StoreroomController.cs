@@ -13,7 +13,7 @@ public class StoreroomController : MonoBehaviour
 
     public void Update(){
         if(canInteract){
-            if(Input.GetKeyDown(KeyCode.Space)){
+            if(Input.GetKeyDown(KeyCode.E)){
                 PickUpIngredient();
             }
         }

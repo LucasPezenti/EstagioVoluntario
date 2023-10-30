@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-[CreateAssetMenu]
 public class Ingredients : MonoBehaviour
 {
     public string ingredientName;

@@ -19,6 +19,7 @@ public class OrderController : MonoBehaviour
     {
         playerOrder = GameObject.FindObjectOfType<Ingredients>();
         score = GameObject.FindObjectOfType<Score>();
+        getOrder();
     }
     public void Update(){
         if(canInteract){
@@ -31,18 +32,19 @@ public class OrderController : MonoBehaviour
     public void serveOrder(){
         if(playerHolding != null && orderObj == null){
             orderObj = playerHolding;
+            //CompareOrder(orderObj.GetComponent<Ingredients>().GetIngredientIndex());
             orderObj.transform.position = serveSpot.position;
             orderObj.transform.parent = transform;
             if(orderObj.GetComponent<Rigidbody2D>()){
                 orderObj.GetComponent<Rigidbody2D>().simulated = true;   
             }
-            CompareOrder(playerOrder);
             Destroy(orderObj);
+            this.gameObject.SetActive(false);
         }
     }
 
-    public void CompareOrder(Ingredients delivered){
-        if(delivered.ingredientIndex == curOrder.ingredientIndex){
+    public void CompareOrder(int delivered){
+        if(delivered == curOrder.ingredientIndex){
             score.AddPoints(1);
         }else{
             score.RemovePoints(1);
