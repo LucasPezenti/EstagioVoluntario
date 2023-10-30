@@ -10,7 +10,7 @@ public class PickUp : MonoBehaviour
     public LayerMask pickUpMask;
     public Vector3 Direction{ get; set; }
     public PlayerController player;
-    private GameObject itemHolding;
+    public GameObject itemHolding;
     
     // Update is called once per frame
     void Update()

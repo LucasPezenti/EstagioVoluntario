@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private string curState;
+    public int points;
     public float moveSpd;
     public Rigidbody2D rb;
     public Animator anim;
@@ -61,6 +61,10 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    public void AddPoints(){
+        points++;
+        Debug.Log("pontos = " + points);
+    }
     // Set interaction alert on
     public void interactOn(){
         interactionAlert.SetActive(true);
