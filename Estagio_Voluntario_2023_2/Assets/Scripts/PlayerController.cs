@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float moveSpd;
+    [Header("Player Settings")]
     public Rigidbody2D rb;
     public Animator anim;
     public GameObject interactionAlert;
+    public Transform holdSpot;
+    public LayerMask pickUpMask;
+    public Vector3 pickDirection{ get; set; }
+    public GameObject itemHolding;
+
+    [Header("Game Settings")]
     [SerializeField] Timer timer;
     [SerializeField] GameObject gameOverScreen;
+    private float moveSpd;
     private Vector2 moveDirection;
     private Vector2 lastMoveDirection;
-    private PickUp pickUp;
 
     private bool canMove = true;
     private float moveX = 0;
@@ -21,8 +28,7 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
-        pickUp = gameObject.GetComponent<PickUp>();
-        pickUp.Direction = new Vector2(0, 0);
+        pickDirection = new Vector2(0, 0);
     }
 
     // Update is called once per frame
@@ -52,7 +58,12 @@ public class PlayerController : MonoBehaviour
 
         // Pick up direction
         if(moveDirection.sqrMagnitude > .1f){
-            pickUp.Direction = moveDirection.normalized;
+            pickDirection = moveDirection.normalized;
+        }
+
+
+        if(itemHolding == null && Input.GetKeyDown(KeyCode.E)){
+            PickUp();
         }
 
     }
@@ -63,6 +74,29 @@ public class PlayerController : MonoBehaviour
         //moved = false;
         moveSpd = 3.4f;
         
+    }
+
+    private void PickUp(){
+        if(itemHolding){
+            itemHolding.transform.position = transform.position + pickDirection * .7f;
+            itemHolding.transform.parent = null;
+            if(itemHolding.GetComponent<Rigidbody2D>()){
+                itemHolding.GetComponent<Rigidbody2D>().simulated = true;
+            }
+            itemHolding = null;
+            //Debug.Log("Item released");
+        }else{
+            Collider2D pickUpItem = Physics2D.OverlapCircle(transform.position + pickDirection*.5f, .3f, pickUpMask);
+            if(pickUpItem){
+                itemHolding = pickUpItem.gameObject;
+                itemHolding.transform.position = holdSpot.position;
+                itemHolding.transform.parent = transform;
+                if(itemHolding.GetComponent<Rigidbody2D>()){
+                    itemHolding.GetComponent<Rigidbody2D>().simulated = false;                
+                //Debug.Log("Item grabbed");
+                }
+            }
+        }
     }
 
     // Set interaction alert on

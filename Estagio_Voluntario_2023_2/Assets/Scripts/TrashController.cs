@@ -1,64 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class OrderController : MonoBehaviour
-{
-    public Ingredients curOrder;
-    public List<Ingredients> order = new List<Ingredients>();
-    public GameObject orderObj;
-    [SerializeField] Transform serveSpot;
+public class TrashController : MonoBehaviour
+{  
+    [SerializeField] Transform discardSpot;
+    private GameObject orderObj;
     private GameObject playerHolding;
-    private Ingredients playerOrder;
-    private Score score;
     private bool canInteract;
-
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        playerOrder = GameObject.FindObjectOfType<Ingredients>();
-        score = GameObject.FindObjectOfType<Score>();
-        getOrder();
+        
     }
-    public void Update(){
+
+    // Update is called once per frame
+    void Update()
+    {
         if(canInteract){
             if(Input.GetKeyDown(KeyCode.E)){
-                serveOrder();
+                discardOrder();
             }
         }
     }
-    
-    public void serveOrder(){
+
+    public void discardOrder(){
         if(playerHolding != null && orderObj == null){
             orderObj = playerHolding;
             //CompareOrder(orderObj.GetComponent<Ingredients>().GetIngredientIndex());
-            orderObj.transform.position = serveSpot.position;
+            orderObj.transform.position = discardSpot.position;
             orderObj.transform.parent = transform;
             if(orderObj.GetComponent<Rigidbody2D>()){
                 orderObj.GetComponent<Rigidbody2D>().simulated = true;   
             }
             Destroy(orderObj);
-            this.gameObject.SetActive(false);
         }
-    }
-
-    public void CompareOrder(int delivered){
-        if(delivered == curOrder.ingredientIndex){
-            score.AddPoints(1);
-        }else{
-            score.RemovePoints(1);
-        }
-    }
-
-    public Transform GetServeSpot(){
-        return serveSpot;
-    }
-    Ingredients getOrder(){
-        int randomNum = Random.Range(1,6);
-        curOrder = order[0];
-
-        return curOrder;
     }
 
     private void OnTriggerEnter2D(Collider2D collision){
@@ -76,5 +52,4 @@ public class OrderController : MonoBehaviour
             collision.gameObject.GetComponent<PlayerController>().interactOff();
         }
     }
-
 }
