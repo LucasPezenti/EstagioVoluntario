@@ -8387,7 +8387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1296665522}
-  curTime: 65
+  curTime: 80
   countDown: 1
   hasLimit: 1
   timerLimit: 0
