@@ -15,6 +15,8 @@ public class Score : MonoBehaviour
     public bool hasFormat;
     public TimerFormats format;
     private Dictionary<TimerFormats, string> pointFormats = new Dictionary<TimerFormats, string>();
+
+    private bool win;
     
     void Start(){
         pointFormats.Add(TimerFormats.Whole, "0");
@@ -24,6 +26,9 @@ public class Score : MonoBehaviour
 
     void Update(){
         SetPointsText();
+        if(tableCount <= 0){
+            win = true;
+        }
     }
 
     private void SetPointsText(){
@@ -32,6 +37,10 @@ public class Score : MonoBehaviour
 
     public void AddPoints(){
         tableCount--;
+    }
+
+    public bool GetWin(){
+        return win;
     }
 }
 

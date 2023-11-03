@@ -15,8 +15,12 @@ public class PlayerController : MonoBehaviour
     public GameObject itemHolding;
 
     [Header("Game Settings")]
-    [SerializeField] Timer timer;
     [SerializeField] GameObject gameOverScreen;
+    [SerializeField] GameObject winScreen;
+
+    private Score score;
+    private Timer timer;
+
     private float moveSpd;
     private Vector2 moveDirection;
     private Vector2 lastMoveDirection;
@@ -28,13 +32,15 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
+        timer = GameObject.FindObjectOfType<Timer>();
+        score = GameObject.FindObjectOfType<Score>();
         pickDirection = new Vector2(0, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        GameOver();
+        Game();
         if(canMove){
             ProcessInputs();
         }
@@ -112,8 +118,14 @@ public class PlayerController : MonoBehaviour
         interactionAlert.SetActive(false);
     }
 
-    public void GameOver(){
-        if(timer.GetGameOver()){
+    public void Game(){
+        if(score.GetWin()){
+            canMove = false;
+            moveDirection.x = 0;
+            moveDirection.y = 0;
+            winScreen.SetActive(true);
+            //Debug.Log("Ganhou");
+        }else if(timer.GetGameOver()){
             canMove = false;
             moveDirection.x = 0;
             moveDirection.y = 0;
