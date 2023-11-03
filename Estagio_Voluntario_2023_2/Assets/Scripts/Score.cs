@@ -1,33 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    private int pointsCount = 0;
-    //private int minPoints = 10;
-    //private bool win;
+    [Header ("Component")]
+    public TextMeshProUGUI pointsText;
 
-    public int getTotalPoints(){
-        return pointsCount;
+    [SerializeField] float tableCount;
+
+    [Header ("Format Settings")]
+    public bool hasFormat;
+    public TimerFormats format;
+    private Dictionary<TimerFormats, string> pointFormats = new Dictionary<TimerFormats, string>();
+    
+    void Start(){
+        pointFormats.Add(TimerFormats.Whole, "0");
+        pointFormats.Add(TimerFormats.TenthDecimal, "0.0");
+        pointFormats.Add(TimerFormats.HundrethsDecimal, "0.00");
     }
 
-    public void AddPoints(int num){
-        pointsCount += num;
-        Debug.Log("pontos: " + pointsCount);
+    void Update(){
+        SetPointsText();
     }
 
-    public void RemovePoints(int num){
-        pointsCount -= num;
+    private void SetPointsText(){
+        pointsText.text = hasFormat ? ("Tables:" + tableCount.ToString(pointFormats[format])) : tableCount.ToString();
     }
-/*
-    public void comparePoints(){
-        if(pointsCount >= minPoints){
-            win = true;
-        }
-        else{
-            win = false;
-        }
+
+    public void AddPoints(){
+        tableCount--;
     }
-*/
+}
+
+public enum PointsFormats{
+    Whole,
+    TenthDecimal,
+    HundrethsDecimal
+
 }

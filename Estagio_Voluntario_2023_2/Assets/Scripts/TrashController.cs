@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TrashController : MonoBehaviour
 {  
+    public StoreroomController store;
     [SerializeField] Transform discardSpot;
     private GameObject orderObj;
     private GameObject playerHolding;
@@ -33,6 +34,7 @@ public class TrashController : MonoBehaviour
             if(orderObj.GetComponent<Rigidbody2D>()){
                 orderObj.GetComponent<Rigidbody2D>().simulated = true;   
             }
+            //store.IngredientDiscarded();
             Destroy(orderObj);
         }
     }

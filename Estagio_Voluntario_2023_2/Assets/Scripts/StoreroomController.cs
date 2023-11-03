@@ -42,5 +42,12 @@ public class StoreroomController : MonoBehaviour
             collision.gameObject.GetComponent<PlayerController>().interactOff();
         }
     }
+    public int GetIngredientCount(){
+        return ingredientCount;
+    }
+
+    public void IngredientDiscarded(){
+        ingredientCount--;
+    }
 
 }

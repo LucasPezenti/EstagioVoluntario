@@ -38,16 +38,9 @@ public class OrderController : MonoBehaviour
             if(orderObj.GetComponent<Rigidbody2D>()){
                 orderObj.GetComponent<Rigidbody2D>().simulated = true;   
             }
+            score.AddPoints();
             Destroy(orderObj);
             this.gameObject.SetActive(false);
-        }
-    }
-
-    public void CompareOrder(int delivered){
-        if(delivered == curOrder.ingredientIndex){
-            score.AddPoints(1);
-        }else{
-            score.RemovePoints(1);
         }
     }
 

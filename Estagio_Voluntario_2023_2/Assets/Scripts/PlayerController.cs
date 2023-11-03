@@ -65,6 +65,9 @@ public class PlayerController : MonoBehaviour
         if(itemHolding == null && Input.GetKeyDown(KeyCode.E)){
             PickUp();
         }
+        else if(itemHolding != null && Input.GetKeyDown(KeyCode.E)){
+            Release();
+        }
 
     }
 
@@ -77,26 +80,26 @@ public class PlayerController : MonoBehaviour
     }
 
     private void PickUp(){
-        if(itemHolding){
-            itemHolding.transform.position = transform.position + pickDirection * .7f;
-            itemHolding.transform.parent = null;
+        Collider2D pickUpItem = Physics2D.OverlapCircle(transform.position + pickDirection*.5f, .3f, pickUpMask);
+        if(pickUpItem){
+            itemHolding = pickUpItem.gameObject;
+            itemHolding.transform.position = holdSpot.position;
+            itemHolding.transform.parent = transform;
             if(itemHolding.GetComponent<Rigidbody2D>()){
-                itemHolding.GetComponent<Rigidbody2D>().simulated = true;
-            }
-            itemHolding = null;
-            //Debug.Log("Item released");
-        }else{
-            Collider2D pickUpItem = Physics2D.OverlapCircle(transform.position + pickDirection*.5f, .3f, pickUpMask);
-            if(pickUpItem){
-                itemHolding = pickUpItem.gameObject;
-                itemHolding.transform.position = holdSpot.position;
-                itemHolding.transform.parent = transform;
-                if(itemHolding.GetComponent<Rigidbody2D>()){
-                    itemHolding.GetComponent<Rigidbody2D>().simulated = false;                
-                //Debug.Log("Item grabbed");
-                }
+                itemHolding.GetComponent<Rigidbody2D>().simulated = false;                
+            //Debug.Log("Item grabbed");
             }
         }
+    }
+
+    private void Release(){
+        itemHolding.transform.position = transform.position + pickDirection * .7f;
+        itemHolding.transform.parent = null;
+        if(itemHolding.GetComponent<Rigidbody2D>()){
+            itemHolding.GetComponent<Rigidbody2D>().simulated = true;
+        }
+        itemHolding = null;
+        //Debug.Log("Item released");
     }
 
     // Set interaction alert on
