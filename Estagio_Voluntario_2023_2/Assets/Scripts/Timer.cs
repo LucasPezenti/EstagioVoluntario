@@ -22,6 +22,7 @@ public class Timer : MonoBehaviour
     private Dictionary<TimerFormats, string> timeFormats = new Dictionary<TimerFormats, string>();
 
     private bool gameOver;
+    private bool timerActive;
 
     // Start is called before the first frame update
     void Start()
@@ -29,20 +30,24 @@ public class Timer : MonoBehaviour
         timeFormats.Add(TimerFormats.Whole, "0");
         timeFormats.Add(TimerFormats.TenthDecimal, "0.0");
         timeFormats.Add(TimerFormats.HundrethsDecimal, "0.00");
+        timerActive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        curTime = countDown ? curTime -= Time.deltaTime : curTime += Time.deltaTime;
-        
-        if(hasLimit && ((countDown && curTime <= timerLimit) || (!countDown && curTime >= timerLimit))){
-            curTime = timerLimit;
-            gameOver = true;
-            SetTimerText();
-            timerText.color = Color.red;
-            enabled = false;
+        if(timerActive){
+            curTime = countDown ? curTime -= Time.deltaTime : curTime += Time.deltaTime;
+            
+            if(hasLimit && ((countDown && curTime <= timerLimit) || (!countDown && curTime >= timerLimit))){
+                curTime = timerLimit;
+                gameOver = true;
+                SetTimerText();
+                timerText.color = Color.red;
+                enabled = false;
+            }
         }
+        
         
         SetTimerText();
     }
@@ -53,6 +58,18 @@ public class Timer : MonoBehaviour
 
     public bool GetGameOver(){
         return gameOver;
+    }
+
+    public bool GetTimerActive(){
+        return timerActive;
+    }
+
+    public void setTimerActiveOn(){
+        timerActive = true;
+    }
+
+    public void setTimerActiveOff(){
+        timerActive = false;
     }
 }
 

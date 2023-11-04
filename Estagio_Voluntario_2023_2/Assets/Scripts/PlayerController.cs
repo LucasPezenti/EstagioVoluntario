@@ -123,6 +123,7 @@ public class PlayerController : MonoBehaviour
             canMove = false;
             moveDirection.x = 0;
             moveDirection.y = 0;
+            timer.setTimerActiveOff();
             winScreen.SetActive(true);
             //Debug.Log("Ganhou");
         }else if(timer.GetGameOver()){

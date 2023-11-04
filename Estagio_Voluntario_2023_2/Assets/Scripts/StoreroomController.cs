@@ -25,7 +25,7 @@ public class StoreroomController : MonoBehaviour
             ingredientCount++;
         }
         else{
-            return;
+            this.gameObject.SetActive(false);
         }
     }
 
