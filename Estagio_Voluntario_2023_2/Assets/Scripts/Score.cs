@@ -32,7 +32,7 @@ public class Score : MonoBehaviour
     }
 
     private void SetPointsText(){
-        pointsText.text = hasFormat ? ("Tables:" + tableCount.ToString(pointFormats[format])) : tableCount.ToString();
+        pointsText.text = hasFormat ? ("Mesas:" + tableCount.ToString(pointFormats[format])) : tableCount.ToString();
     }
 
     public void AddPoints(){

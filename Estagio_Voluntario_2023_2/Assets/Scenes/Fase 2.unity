@@ -1028,7 +1028,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 377724600}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5368,7 +5368,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1129912712}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8631,7 +8631,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1596663518}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
